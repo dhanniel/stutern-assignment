@@ -5,11 +5,16 @@
             border:1px dotted black;
             /*border-collapse: collapse;*/
             border-radius: 10px;
-            padding:15px;
+            padding:10px;
             border-spacing: 10px;
+            text-align: center;
+            background-color: rgb(37, 37, 10);
         }
-        th, td {
+        th {
             background-color: rgb(174, 156, 19);
+        }
+        td {
+            background-color: rgb(254, 226, 16);
         }
     </style>
 <head>
@@ -19,22 +24,43 @@
     <title>Table</title>
 </head>
 <body>
-    <h2>A basic HTML table</h2>
+    <h2>Republic Voting Report</h2>
     <table style="width:100%">
         <tr style="height:4em">
-            <th style="width:33.33%">Company</th>
-            <th>Contact</th>
-            <th style="width:33.33%">Country</th>
+            <th style="width:33.33%"  colspan="4">This is the Total Vote Accumulated by each of the Political Parties in the just concluded Election</th>
+        </tr>
+        <tr style="height:3em">
+            <th>S/N</th>
+            <th style="width:32%">Candidate Name</th>
+            <th style="width:32%">Political Party</th>
+            <th style="width:32%">Total Vote Counts</th>
         </tr>
         <tr>
-            <td rowspan="2">Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
+            <td>1</td>
+            <td>Ibrahim Bako</td>
+            <td>APN</td>
+            <td>12,000,000</td>
         </tr>
         <tr>
-            <td colspan="2">Francisco Chang</td>
+            <td>2</td>
+            <td>Ajayi Samuel</td>
+            <td>PCN</td>
+            <td>13,500,000</td>
         </tr>
+        <tr>
+            <td>3</td>
+            <td>Paul Obasi</td>
+            <td>CJN</td>
+            <td>15,150,000</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Umaru Anthony</td>
+            <td>AALP</td>
+            <td>5,000,000</td>
+        </tr>
+        
     </table>
-    <p>To understand the example better, we have added borders to the table</p>
+    <p>Final result will be announced by the Independent Electoral Commission</p>
 </body>
 </html>
